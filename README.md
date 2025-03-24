@@ -16,18 +16,23 @@ This project demonstrates how to launch an AWS EC2 instance using the AWS Manage
 3. Click on the **Services** dropdown and search for **EC2**.
 4. Click **Launch instance**.
 5. Under **All Services > Compute**, select **EC2**.
+   
 ![Alt text](EC2-service.png)
+
 ![Alt text](EC2-launch.png)
 
 ### 2. Configuring the EC2 Instance
 #### Step 1: Choose an Amazon Machine Image (AMI)
 - Select **Amazon Linux 2 AMI (HVM), SSD Volume Type, 64-bit (x86)**.
+- 
 ![Alt text](Name.png)
+
 ![Alt text](AMI.png)
 
 #### Step 2: Choose an Instance Type
 - Select **t2.micro (Free tier eligible)**.
-![Alt text](instance-type.png)
+- 
+![Alt text](Intance-type.png)
 
 #### Step 3: Configure Instance Details
 - Ensure **Auto-assign Public IP** is set to **Use subnet setting (Enable)**.
@@ -35,17 +40,20 @@ This project demonstrates how to launch an AWS EC2 instance using the AWS Manage
 
 #### Step 4: Configure Key Pair
 - Select **Create a new key pair** and save it securely.
+  
 ![Alt text](keypair.png)
 
 #### Step 5: Configure Security Group
 - Create a new security group with rules for:
   - **SSH (Port 22)** - Allow access from your IP.
   - **HTTP (Port 80)** - Allow access from anywhere.
+    
  ![Alt text](Securitygroup.png)
 
 
 #### Step 6: Add Storage
 - Ensure the **Volume Type** is set to **General Purpose SSD (gp2)**.
+  
 ![Alt text](Storage.png)
 
 
@@ -61,11 +69,13 @@ systemctl start httpd
 systemctl enable httpd
 ```
 ![Alt text](Advance.png)
+
 ![Alt text](userdata.png)
 
 
 #### Step 8: Launch Instance
 - Click **Launch** to create the instance.
+- 
 ![Alt text](launching.png)
 
 ### 3. Verifying the EC2 Instance
@@ -73,12 +83,14 @@ systemctl enable httpd
 1. Go to the **EC2 Dashboard**.
 2. Ensure the instance is in **Running** status.
 ![Alt text](instance-status.png)
+
 ![Alt text](instance-launched.png)
 
 
 #### Confirm Apache HTTP Server is Running
 1. Copy the **Public IP** of the EC2 instance.
 2. Open a web browser and enter `http://<public-ip>`. You should see the Apache test page.
+3. 
 ![Alt text](Testpage.png)
 
 
