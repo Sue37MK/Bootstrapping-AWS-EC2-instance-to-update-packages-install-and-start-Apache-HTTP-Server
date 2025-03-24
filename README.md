@@ -24,14 +24,14 @@ This project demonstrates how to launch an AWS EC2 instance using the AWS Manage
 ### 2. Configuring the EC2 Instance
 #### Step 1: Choose an Amazon Machine Image (AMI)
 - Select **Amazon Linux 2 AMI (HVM), SSD Volume Type, 64-bit (x86)**.
-- 
+  
 ![Alt text](Name.png)
 
 ![Alt text](AMI.png)
 
 #### Step 2: Choose an Instance Type
 - Select **t2.micro (Free tier eligible)**.
-- 
+  
 ![Alt text](Intance-type.png)
 
 #### Step 3: Configure Instance Details
